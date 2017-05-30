@@ -15,6 +15,8 @@ import com.hsuforum.common.service.BaseFacade;
 @SuppressWarnings("rawtypes")
 public class BaseFacadeImpl<T extends BaseEntity, PK extends Serializable> implements BaseFacade<T, PK> {
 
+	private static final long serialVersionUID = 7782864206345356938L;
+
 
    
     

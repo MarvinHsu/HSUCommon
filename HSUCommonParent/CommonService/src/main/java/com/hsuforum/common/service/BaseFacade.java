@@ -13,6 +13,6 @@ import com.hsuforum.common.entity.BaseEntity;
  * @param <PK>
  */
 @SuppressWarnings("rawtypes")
-public interface BaseFacade<T extends BaseEntity, PK extends Serializable>{
+public interface BaseFacade<T extends BaseEntity, PK extends Serializable> extends Serializable{
 
 }

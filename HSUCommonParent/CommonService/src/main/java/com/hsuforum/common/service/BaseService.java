@@ -12,7 +12,7 @@ import java.util.Map;
  * @param <T>
  * @param <PK>
  */
-public interface BaseService<T, PK extends Serializable> {
+public interface BaseService<T, PK extends Serializable> extends Serializable {
 
 	/**
 	 * count entity

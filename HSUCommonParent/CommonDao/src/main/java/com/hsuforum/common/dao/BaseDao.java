@@ -14,7 +14,7 @@ import javax.persistence.EntityManager;
  * @param <T>
  * @param <PK>
  */
-public interface BaseDao<T, PK extends Serializable> {
+public interface BaseDao<T, PK extends Serializable> extends Serializable {
 
 	/**
 	 * count entity

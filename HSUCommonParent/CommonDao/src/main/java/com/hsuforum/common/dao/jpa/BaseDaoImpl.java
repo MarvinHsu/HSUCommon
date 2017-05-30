@@ -27,6 +27,8 @@ import com.hsuforum.common.entity.BaseEntity;
  */
 public class BaseDaoImpl<T extends BaseEntity<PK>, PK extends Serializable> implements BaseDao<T, PK> {
 
+	private static final long serialVersionUID = 7083892661789424395L;
+
 	private static Log logger = LogFactory.getLog(BaseDaoImpl.class);
 
 	@PersistenceContext

@@ -23,6 +23,8 @@ import com.hsuforum.common.service.BaseService;
 public abstract class BaseServiceImpl<T extends BaseEntity<PK>, PK extends Serializable, DAO extends BaseDao<T, PK>>
 		implements BaseService<T, PK> {
 
+	private static final long serialVersionUID = 45493891589631839L;
+
 	private static Log logger = LogFactory.getLog(BaseServiceImpl.class);
 
 	// Data access object of service，Spring will inject it
