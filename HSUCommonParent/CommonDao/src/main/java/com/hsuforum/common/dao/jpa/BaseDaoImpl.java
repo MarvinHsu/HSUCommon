@@ -537,7 +537,7 @@ public class BaseDaoImpl<T extends BaseEntity<PK>, PK extends Serializable> impl
 								.append(criteriaKey.toString().replace(".", "_"));
 					} else if (operMap.get(criteriaKey.toString()) != null
 							&& operMap.get(criteriaKey.toString()).equals("ne")) {
-						queryString.append("entity.").append(criteriaKey.toString()).append(" >< :")
+						queryString.append("entity.").append(criteriaKey.toString()).append(" <> :")
 								.append(criteriaKey.toString().replace(".", "_"));
 					} else if (operMap.get(criteriaKey.toString()) != null
 							&& operMap.get(criteriaKey.toString()).equals("like")) {
@@ -652,7 +652,7 @@ public class BaseDaoImpl<T extends BaseEntity<PK>, PK extends Serializable> impl
 								.append(criteriaKey.toString().replace(".", "_"));
 					} else if (operMap.get(criteriaKey.toString()) != null
 							&& operMap.get(criteriaKey.toString()).equals("ne")) {
-						queryString.append("entity.").append(criteriaKey.toString()).append(" >< :")
+						queryString.append("entity.").append(criteriaKey.toString()).append(" <> :")
 								.append(criteriaKey.toString().replace(".", "_"));
 					} else if (operMap.get(criteriaKey.toString()) != null
 							&& operMap.get(criteriaKey.toString()).equals("like")) {
