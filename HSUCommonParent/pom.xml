@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>HSUCommonParent</groupId>
 	<artifactId>HSUCommonParent</artifactId>
-	<version>2.0</version>
+	<version>2.0.1</version>
 	<packaging>pom</packaging>
 	<modules>
 		<module>CommonEntity</module>
@@ -14,7 +14,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<primefaces.version>6.1</primefaces.version>
-		<spring.version>4.3.10.RELEASE</spring.version>
+		<spring.version>4.3.11.RELEASE</spring.version>
 		<springSecurity.version>4.2.3.RELEASE</springSecurity.version>
 		<javaserverfaces.version>2.2.14</javaserverfaces.version>
 		<java.version>1.8</java.version>
@@ -313,23 +313,23 @@
 			<dependency>
 				<groupId>HSUCommonParent</groupId>
 				<artifactId>CommonEntity</artifactId>
-				<version>2.0</version>
+				<version>2.0.1</version>
 			</dependency>
 			<dependency>
 				<groupId>HSUCommonParent</groupId>
 				<artifactId>CommonDao</artifactId>
-				<version>2.0</version>
+				<version>2.0.1</version>
 			</dependency>
 
 			<dependency>
 				<groupId>HSUCommonParent</groupId>
 				<artifactId>CommonService</artifactId>
-				<version>2.0</version>
+				<version>2.0.1</version>
 			</dependency>
 			<dependency>
 				<groupId>HSUCommonParent</groupId>
 				<artifactId>CommonWeb</artifactId>
-				<version>2.0</version>
+				<version>2.0.1</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
