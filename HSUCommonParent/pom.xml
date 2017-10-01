@@ -15,7 +15,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<primefaces.version>6.1</primefaces.version>
 		<spring.version>5.0.0.RELEASE</spring.version>
-		<springSecurity.version>4.2.3.RELEASE</springSecurity.version>
+		<springSecurity.version>5.0.0.M4</springSecurity.version>
 		<javaserverfaces.version>2.2.14</javaserverfaces.version>
 		<java.version>1.8</java.version>
 	</properties>
@@ -364,6 +364,12 @@
 			<url>http://repository.primefaces.org/</url>
 			<layout>default</layout>
 		</pluginRepository>
+		<pluginRepository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/libs-milestone/</url>
+			<layout>default</layout>
+		</pluginRepository>		
 	</pluginRepositories>
 	<repositories>
 
@@ -378,7 +384,6 @@
 			<name>JBoss Repository</name>
 			<layout>default</layout>
 			<url>https://repository.jboss.org/nexus/content/groups/public/</url>
-
 		</repository>
 		<repository>
 			<id>prime-repo</id>
@@ -386,6 +391,10 @@
 			<url>http://repository.primefaces.org/</url>
 			<layout>default</layout>
 		</repository>
-
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/libs-milestone/</url>
+		</repository>
 	</repositories>
 </project>
