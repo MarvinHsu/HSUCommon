@@ -1,9 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>HSUCommonParent</groupId>
+	<groupId>com.hsuforum.HSUCommonParent</groupId>
 	<artifactId>HSUCommonParent</artifactId>
-	<version>2.0</version>
+	<version>2.0.1</version>
 	<packaging>pom</packaging>
 	<modules>
 		<module>CommonEntity</module>
@@ -14,7 +14,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<primefaces.version>6.1</primefaces.version>
-		<spring.version>4.3.10.RELEASE</spring.version>
+		<spring.version>5.0.0.RELEASE</spring.version>
 		<springSecurity.version>4.2.3.RELEASE</springSecurity.version>
 		<javaserverfaces.version>2.2.14</javaserverfaces.version>
 		<java.version>1.8</java.version>
@@ -295,11 +295,7 @@
 			<type>jar</type>
 
 		</dependency>
-		<dependency>
-			<groupId>dom4j</groupId>
-			<artifactId>dom4j</artifactId>
-			<version>1.6.1</version>
-		</dependency>
+		
 		<dependency>
 			<groupId>org.owasp.esapi</groupId>
 			<artifactId>esapi</artifactId>
@@ -311,25 +307,25 @@
 		<dependencies>
 
 			<dependency>
-				<groupId>HSUCommonParent</groupId>
+				<groupId>com.hsuforum.HSUCommonParent</groupId>
 				<artifactId>CommonEntity</artifactId>
-				<version>2.0</version>
+				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>HSUCommonParent</groupId>
+				<groupId>com.hsuforum.HSUCommonParent</groupId>
 				<artifactId>CommonDao</artifactId>
-				<version>2.0</version>
+				<version>${project.version}</version>
 			</dependency>
 
 			<dependency>
-				<groupId>HSUCommonParent</groupId>
+				<groupId>com.hsuforum.HSUCommonParent</groupId>
 				<artifactId>CommonService</artifactId>
-				<version>2.0</version>
+				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>HSUCommonParent</groupId>
+				<groupId>com.hsuforum.HSUCommonParent</groupId>
 				<artifactId>CommonWeb</artifactId>
-				<version>2.0</version>
+				<version>${project.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -368,6 +364,7 @@
 			<url>http://repository.primefaces.org/</url>
 			<layout>default</layout>
 		</pluginRepository>
+		
 	</pluginRepositories>
 	<repositories>
 
@@ -382,7 +379,6 @@
 			<name>JBoss Repository</name>
 			<layout>default</layout>
 			<url>https://repository.jboss.org/nexus/content/groups/public/</url>
-
 		</repository>
 		<repository>
 			<id>prime-repo</id>
@@ -390,6 +386,6 @@
 			<url>http://repository.primefaces.org/</url>
 			<layout>default</layout>
 		</repository>
-
+		
 	</repositories>
 </project>
