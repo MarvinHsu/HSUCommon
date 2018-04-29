@@ -757,7 +757,7 @@ public class DateUtils extends org.apache.commons.lang.time.DateUtils {
 	 * @throws ParseException 
 	 */
 	public static Date simpleISODateStringToDate(String dateString) throws ParseException {
-		SimpleDateFormat sdm = new SimpleDateFormat("yyyymmdd");
+		SimpleDateFormat sdm = new SimpleDateFormat("yyyyMMdd");
 		Date date = null;
 		try {
 			date = sdm.parse(dateString);
