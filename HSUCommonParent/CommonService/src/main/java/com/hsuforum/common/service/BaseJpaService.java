@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Optional;
 
-public interface BaseJPAService<T, ID extends Serializable> extends Serializable {
+public interface BaseJpaService<T, ID extends Serializable> extends Serializable {
 	/**
 	 * Deletes all entities in a batch call.
 	 */

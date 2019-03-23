@@ -3,12 +3,12 @@ package com.hsuforum.common.service.impl;
 import java.io.Serializable;
 import java.util.List;
 
-import com.hsuforum.common.dao.BaseJPARepository;
+import com.hsuforum.common.dao.BaseJpaRepository;
 import com.hsuforum.common.entity.BaseEntity;
-import com.hsuforum.common.service.BaseJPAService;
+import com.hsuforum.common.service.BaseJpaService;
 
-public abstract class BaseJPAServiceImpl<T extends BaseEntity<ID>, ID extends Serializable, REPO extends BaseJPARepository<T, ID>>
-		implements BaseJPAService<T, ID> {
+public abstract class BaseJpaServiceImpl<T extends BaseEntity<ID>, ID extends Serializable, REPO extends BaseJpaRepository<T, ID>>
+		implements BaseJpaService<T, ID> {
 
 	private static final long serialVersionUID = 3784804606624047248L;
 	
