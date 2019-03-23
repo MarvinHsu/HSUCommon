@@ -25,11 +25,6 @@ public abstract class BaseServiceImpl<T extends BaseEntity<PK>, PK extends Seria
 
 	private static final long serialVersionUID = 45493891589631839L;
 
-	private static Log logger = LogFactory.getLog(BaseServiceImpl.class);
-
-	// Data access object of service，Spring will inject it
-	private DAO dao;
-
 	/**
 	 * @see com.hsuforum.common.service.BaseService#count()
 	 */
@@ -219,18 +214,14 @@ public abstract class BaseServiceImpl<T extends BaseEntity<PK>, PK extends Seria
 	 * @return DAO
 	 */
 
-	public DAO getDao() {
-		return this.dao;
-	}
+	public abstract DAO getDao();
 
 	/**
 	 * Set data access object
 	 *
 	 * @param dao
 	 */
-	public void setDao(DAO dao) {
-		this.dao = dao;
-	}
+	public abstract void setDao(DAO dao);
 
 	/**
 	 * @see com.hsuforum.common.service.BaseService#refresh(java.lang.Object)
