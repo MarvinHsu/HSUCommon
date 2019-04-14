@@ -14,7 +14,7 @@
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<primefaces.version>6.2</primefaces.version>
+		<primefaces.version>7.0</primefaces.version>
 		<spring.version>5.1.6.RELEASE</spring.version>
 		<springSecurity.version>5.1.5.RELEASE</springSecurity.version>
 		<springData.version>Lovelace-SR6</springData.version>
