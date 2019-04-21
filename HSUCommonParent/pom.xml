@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.hsuforum.HSUCommonParent</groupId>
 	<artifactId>HSUCommonParent</artifactId>
-	<version>2.0.5</version>
+	<version>3.0.0</version>
 	<packaging>pom</packaging>
 	<modules>
 		<module>CommonEntity</module>
@@ -14,9 +14,10 @@
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<primefaces.version>6.2</primefaces.version>
-		<spring.version>5.1.5.RELEASE</spring.version>
-		<springSecurity.version>5.1.4.RELEASE</springSecurity.version>
+		<primefaces.version>7.0</primefaces.version>
+		<spring.version>5.1.6.RELEASE</spring.version>
+		<springSecurity.version>5.1.5.RELEASE</springSecurity.version>
+		<springData.version>Lovelace-SR6</springData.version>
 		<javaserverfaces.version>2.2.18</javaserverfaces.version>
 		<java.version>1.8</java.version>
 	</properties>
@@ -189,6 +190,10 @@
 			<version>${spring.version}</version>
 		</dependency>
 		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
 			<version>1.9.2</version>
@@ -312,6 +317,13 @@
 				<groupId>com.hsuforum.HSUCommonParent</groupId>
 				<artifactId>CommonWeb</artifactId>
 				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-releasetrain</artifactId>
+				<version>${springData.version}</version>
+				<scope>import</scope>
+				<type>pom</type>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
