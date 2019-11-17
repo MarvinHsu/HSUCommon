@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.hsuforum.HSUCommonParent</groupId>
 	<artifactId>HSUCommonParent</artifactId>
-	<version>3.0.2</version>
+	<version>3.0.3</version>
 	<packaging>pom</packaging>
 	<modules>
 		<module>CommonEntity</module>
@@ -15,9 +15,9 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<primefaces.version>7.0</primefaces.version>
-		<spring.version>5.1.9.RELEASE</spring.version>
-		<springSecurity.version>5.1.6.RELEASE</springSecurity.version>
-		<springData.version>Lovelace-SR10</springData.version>
+		<spring.version>5.2.0.RELEASE</spring.version>
+		<springSecurity.version>5.2.0.RELEASE</springSecurity.version>
+		<springData.version>Moore-RELEASE</springData.version>
 		<javaserverfaces.version>2.2.18</javaserverfaces.version>
 		<java.version>1.8</java.version>
 	</properties>
@@ -333,7 +333,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.5.1</version>
+				<version>3.8.1</version>
 				<configuration>
 					<source>${java.version}</source>
 					<target>${java.version}</target>
