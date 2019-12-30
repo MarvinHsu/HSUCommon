@@ -17,7 +17,7 @@
 		<primefaces.version>7.0</primefaces.version>
 		<spring.version>5.2.2.RELEASE</spring.version>
 		<springSecurity.version>5.2.1.RELEASE</springSecurity.version>
-		<springData.version>Moore-SR2</springData.version>
+		<springData.version>Moore-SR3</springData.version>
 		<javaserverfaces.version>2.2.18</javaserverfaces.version>
 		<java.version>1.8</java.version>
 	</properties>
