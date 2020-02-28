@@ -2,7 +2,6 @@ package com.hsuforum.common.service;
 
 import java.io.Serializable;
 import java.util.List;
-import java.util.Optional;
 
 public interface BaseJpaService<T, ID extends Serializable> extends Serializable {
 	/**
@@ -14,6 +13,11 @@ public interface BaseJpaService<T, ID extends Serializable> extends Serializable
 	 * @param entities
 	 */
 	void deleteInBatch(Iterable<T> entities);
+	/**
+	 * Deletes entitie.
+	 * @param entities
+	 */
+	void delete(T entity);
 	/**
 	 * find all entities
 	 * @return
