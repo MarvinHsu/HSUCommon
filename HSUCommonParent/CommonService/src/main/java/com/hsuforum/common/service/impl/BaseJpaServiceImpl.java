@@ -32,6 +32,10 @@ public abstract class BaseJpaServiceImpl<T extends BaseEntity<ID>, ID extends Se
 		this.getRepo().deleteInBatch(entities);
 	}
 	@Override
+	public void delete(T entity) {
+		this.getRepo().delete(entity);
+	}
+	@Override
 	public List<T> findAll() {
 		return this.getRepo().findAll();
 	}
