@@ -2,6 +2,7 @@ package com.hsuforum.common.dao.jpa;
 
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -31,7 +32,7 @@ public class BaseDaoImpl<T extends BaseEntity<PK>, PK extends Serializable> impl
 
 	private static Log logger = LogFactory.getLog(BaseDaoImpl.class);
 
-	@PersistenceContext
+	@PersistenceContext(name = "persistenceUnit")
 	private EntityManager entityManager;
 
 	transient private Class<T> persistClass;
@@ -42,8 +43,19 @@ public class BaseDaoImpl<T extends BaseEntity<PK>, PK extends Serializable> impl
 	 */
 	@SuppressWarnings("unchecked")
 	public BaseDaoImpl() {
-		this.persistClass = (Class<T>) ((ParameterizedType) super.getClass().getGenericSuperclass())
-				.getActualTypeArguments()[0];
+		Type genericSuperClass = getClass().getGenericSuperclass();
+
+		ParameterizedType parametrizedType = null;
+		while (parametrizedType == null) {
+		   if ((genericSuperClass instanceof ParameterizedType)) {
+		       parametrizedType = (ParameterizedType) genericSuperClass;
+		   } else {
+		       genericSuperClass = ((Class<?>) genericSuperClass).getGenericSuperclass();
+		   }
+		}
+
+		this.persistClass = (Class<T>) parametrizedType.getActualTypeArguments()[0];
+		
 	}
 
 	/**
