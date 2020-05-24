@@ -14,7 +14,7 @@
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<primefaces.version>7.0</primefaces.version>
+		<primefaces.version>8.0</primefaces.version>
 		<spring.version>5.2.6.RELEASE</spring.version>
 		<springSecurity.version>5.3.2.RELEASE</springSecurity.version>
 		<springData.version>Neumann-RELEASE</springData.version>
