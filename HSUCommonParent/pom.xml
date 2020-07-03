@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.hsuforum.HSUCommonParent</groupId>
 	<artifactId>HSUCommonParent</artifactId>
-	<version>3.0.7</version>
+	<version>3.0.8</version>
 	<packaging>pom</packaging>
 	<modules>
 		<module>CommonEntity</module>
@@ -244,11 +244,6 @@
 			<version>2.0.2.RELEASE</version>
 		</dependency>
 		<dependency>
-			<groupId>org.quartz-scheduler</groupId>
-			<artifactId>quartz</artifactId>
-			<version>2.2.1</version>
-		</dependency>
-		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>1.7.5</version>
@@ -257,18 +252,6 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.7.5</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.httpcomponents</groupId>
-			<artifactId>httpclient</artifactId>
-			<version>4.5.6</version>
-			<type>jar</type>
-		</dependency>
-		<dependency>
-			<groupId>net.sourceforge.htmlcleaner</groupId>
-			<artifactId>htmlcleaner</artifactId>
-			<version>2.10</version>
-			<type>jar</type>
 		</dependency>
 		<dependency>
 			<groupId>org.owasp.esapi</groupId>
