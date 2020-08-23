@@ -67,7 +67,7 @@ public interface BaseManagedBean<T extends BaseEntity<PK>, PK extends Serializab
 	 * 
 	 * @return 
 	 */
-	String doUpdateAction();
+	String doUpdateAction(T entity);
 	
 	/**
 	 * In read page, press find button to find data

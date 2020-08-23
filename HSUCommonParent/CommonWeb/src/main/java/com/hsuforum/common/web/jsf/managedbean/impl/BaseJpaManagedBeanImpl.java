@@ -155,7 +155,7 @@ public abstract class BaseJpaManagedBeanImpl<T extends BaseEntity<ID>, ID extend
 	 * @see com.hsuforum.common.web.jsf.managedbean.BaseManagedBean#doUpdateAction()
 	 */
 	@Override
-	public abstract String doUpdateAction();
+	public abstract String doUpdateAction(T entity);
 
 
 	/**
