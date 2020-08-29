@@ -62,7 +62,7 @@ public interface BaseJpaManagedBean <T extends BaseEntity<ID>, ID extends Serial
 	 * 
 	 * @return 
 	 */
-	String doUpdateAction();
+	String doUpdateAction(T entity);
 	
 	/**
 	 * In read page, press find button to find data

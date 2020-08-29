@@ -151,7 +151,7 @@ public abstract class BaseManagedBeanImpl<T extends BaseEntity<PK>, PK extends S
 	 * @see com.hsuforum.common.web.jsf.managedbean.BaseManagedBean#doUpdateAction()
 	 */
 	@Override
-	public abstract String doUpdateAction();
+	public abstract String doUpdateAction(T entity);
 
 
 	/**

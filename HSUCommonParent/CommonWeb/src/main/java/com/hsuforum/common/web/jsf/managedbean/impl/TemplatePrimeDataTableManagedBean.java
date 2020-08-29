@@ -21,8 +21,6 @@ public abstract class TemplatePrimeDataTableManagedBean<T extends BaseEntity<PK>
 		extends BaseManagedBeanImpl<T, PK, SERVICE> {
 
 	private static final long serialVersionUID = 6088970245648972762L;
-	// data model of table
-	private ListDataModel<T> dataModel;
 	// data list data model
 	private List<T> dataList;
 
@@ -31,28 +29,6 @@ public abstract class TemplatePrimeDataTableManagedBean<T extends BaseEntity<PK>
 	public TemplatePrimeDataTableManagedBean() {
 		super();
 
-	}
-
-	/**
-	 * Get data model
-	 * @return
-	 */
-	public ListDataModel<T> getDataModel() {
-		if (this.dataModel == null) {
-			this.dataModel = new ListDataModel<T>();
-			dataModel.setWrappedData(this.getDataList());
-		}
-		return this.dataModel;
-	}
-
-	/**
-	 * Set data model
-	 * 
-	 * @param dataModel
-	 *            
-	 */
-	public void setDataModel(ListDataModel<T> dataModel) {
-		this.dataModel = dataModel;
 	}
 
 	/**
@@ -104,8 +80,6 @@ public abstract class TemplatePrimeDataTableManagedBean<T extends BaseEntity<PK>
 	 * @see com.hsuforum.common.web.jsf.managedbean.impl.BaseManagedBeanImpl#doRefreshData()
 	 */
 	public void doRefreshData() {
-		// set dataModel null
-		this.setDataModel(null);
 		// set dataList null
 		this.setDataList(null);
 
@@ -153,9 +127,8 @@ public abstract class TemplatePrimeDataTableManagedBean<T extends BaseEntity<PK>
 	 * @see com.hsuforum.common.web.jsf.managedbean.impl.BaseManagedBeanImpl#doUpdateAction()
 	 */
 	@Override
-	public String doUpdateAction() {
+	public String doUpdateAction(T entity) {
 
-		T entity = (T) this.getDataModel().getRowData();
 		this.setUpdatingData(this.wrap(entity));
 
 		this.initUpdatingData(this.getUpdatingData());
@@ -228,7 +201,6 @@ public abstract class TemplatePrimeDataTableManagedBean<T extends BaseEntity<PK>
 	@Override
 	public String doFindAction() {
 		this.setStatusSearched(true);
-		this.setDataModel(null);
 		return null;
 	}
 
