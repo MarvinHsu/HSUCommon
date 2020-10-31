@@ -15,9 +15,9 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<primefaces.version>8.0</primefaces.version>
-		<spring.version>5.2.9.RELEASE</spring.version>
-		<springSecurity.version>5.3.4.RELEASE</springSecurity.version>
-		<springData.version>Neumann-SR4</springData.version>
+		<spring.version>5.3.0</spring.version>
+		<springSecurity.version>5.4.1</springSecurity.version>
+		<springData.version>2020.0.0</springData.version>
 		<javaserverfaces.version>2.2.18</javaserverfaces.version>
 		<java.version>11</java.version>
 	</properties>
@@ -293,7 +293,7 @@
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.data</groupId>
-				<artifactId>spring-data-releasetrain</artifactId>
+				<artifactId>spring-data-bom</artifactId>
 				<version>${springData.version}</version>
 				<scope>import</scope>
 				<type>pom</type>
