@@ -15,7 +15,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<primefaces.version>8.0</primefaces.version>
-		<spring.version>5.3.2</spring.version>
+		<spring.version>5.3.3</spring.version>
 		<springSecurity.version>5.4.2</springSecurity.version>
 		<springData.version>2020.0.2</springData.version>
 		<jakartafaces.version>2.3.14</jakartafaces.version>
