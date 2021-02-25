@@ -28,7 +28,7 @@ public interface BaseJpaService<T, ID extends Serializable> extends Serializable
 	 * @param ids
 	 * @return
 	 */
-	List<T> findAllById(Iterable<ID> ids); 
+	List<T> findAllByIds(Iterable<ID> ids); 
 	/**
 	 * Flushes all pending changes to the database.
 	 */
