@@ -40,7 +40,7 @@ public abstract class BaseJpaServiceImpl<T extends BaseEntity<ID>, ID extends Se
 		return this.getRepo().findAll();
 	}
 	@Override
-	public List<T> findAllById(Iterable<ID> ids) {
+	public List<T> findAllByIds(Iterable<ID> ids) {
 		return this.getRepo().findAllById(ids);
 	}
 	@Override
