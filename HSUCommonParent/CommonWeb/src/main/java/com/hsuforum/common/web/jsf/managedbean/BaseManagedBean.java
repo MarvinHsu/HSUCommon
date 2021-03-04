@@ -3,6 +3,7 @@ package com.hsuforum.common.web.jsf.managedbean;
 import java.io.Serializable;
 
 import com.hsuforum.common.entity.BaseEntity;
+import com.hsuforum.common.service.BaseJpaService;
 import com.hsuforum.common.service.BaseService;
 /**
  * Base JSF ManagedBean interface 
@@ -11,7 +12,7 @@ import com.hsuforum.common.service.BaseService;
  * @param <T> Entity
  * @param <SERVICE> Service
  */
-public interface BaseManagedBean<T extends BaseEntity<PK>, PK extends Serializable, SERVICE extends BaseService<T, PK>> extends Serializable{
+public interface BaseManagedBean<T extends BaseEntity<ID>, ID extends Serializable, SERVICE extends BaseService<T, ID>, JPA_SERVICE extends BaseJpaService<T,ID>> extends Serializable{
 
 	/**
 	 * In create page, press cancel button, cancel create object and redirect read page
