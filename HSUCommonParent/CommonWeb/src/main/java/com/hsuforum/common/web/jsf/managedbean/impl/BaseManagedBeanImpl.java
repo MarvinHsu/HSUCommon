@@ -8,6 +8,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import com.hsuforum.common.entity.BaseEntity;
+import com.hsuforum.common.service.BaseJpaService;
 import com.hsuforum.common.service.BaseService;
 import com.hsuforum.common.web.jsf.managedbean.BaseManagedBean;
 import com.hsuforum.common.web.vo.ValueObject;
@@ -20,23 +21,22 @@ import com.hsuforum.common.web.vo.impl.VoWrapperImpl;
  * 
  * @author Marvin
  *
- * @param <T>
- *            Entity
- * @param <SERVICE>
- *            Service
+ * @param <T>       Entity
+ * @param <SERVICE> Service
  */
-public abstract class BaseManagedBeanImpl<T extends BaseEntity<PK>, PK extends Serializable, SERVICE extends BaseService<T, PK>>
-		implements BaseManagedBean<T, PK, SERVICE> {
+public abstract class BaseManagedBeanImpl<T extends BaseEntity<ID>, ID extends Serializable, SERVICE extends BaseService<T, ID>, JPA_SERVICE extends BaseJpaService<T, ID>>
+		implements BaseManagedBean<T, ID, SERVICE, JPA_SERVICE> {
 
-	
 	private static final long serialVersionUID = -8002301686636248272L;
-	@SuppressWarnings("unused")
-	private final static Log LOGGER = LogFactory.getLog(BaseManagedBeanImpl.class);
+
 	// value object of managedBean for create and update action
-	private ValueObject<T, PK> updatingData;
+	private ValueObject<T, ID> updatingData;
 
 	// main service of managedBean
 	private SERVICE service;
+
+	// main jpa service of managedBean
+	private JPA_SERVICE jpaService;
 
 	// find criteria map
 	private Map<String, ? extends Object> findCriteriaMap;
@@ -47,7 +47,7 @@ public abstract class BaseManagedBeanImpl<T extends BaseEntity<PK>, PK extends S
 	// is initial show search of data
 	private boolean initShowListData = true;
 
-	private VoWrapper<T, PK> voWrapper = new VoWrapperImpl<T, PK>();
+	private VoWrapper<T, ID> voWrapper = new VoWrapperImpl<T, ID>();
 
 	public BaseManagedBeanImpl() {
 		super();
@@ -71,7 +71,6 @@ public abstract class BaseManagedBeanImpl<T extends BaseEntity<PK>, PK extends S
 			list = this.findAllData();
 		} else {
 
-			
 			if (this.getFindOperMap() != null && this.getFindOperMap().size() > 0 && this.getFindSortMap() != null
 					&& this.getFindSortMap().size() > 0) {
 				list = this.getService().findByCriteriaMap(this.getFindCriteriaMap(), this.getFindOperMap(),
@@ -83,7 +82,6 @@ public abstract class BaseManagedBeanImpl<T extends BaseEntity<PK>, PK extends S
 			} else {
 				list = this.getService().findByCriteriaMap(this.getFindCriteriaMap(), null, null);
 			}
-			
 
 		}
 		return list;
@@ -99,10 +97,10 @@ public abstract class BaseManagedBeanImpl<T extends BaseEntity<PK>, PK extends S
 	 *
 	 * @param updatingData
 	 */
-	protected abstract void initUpdatingData(ValueObject<T, PK> updatingData);
+	protected abstract void initUpdatingData(ValueObject<T, ID> updatingData);
 
 	/**
-	 * setup relation entity of updating data 
+	 * setup relation entity of updating data
 	 */
 	protected abstract void setupUpdatingData();
 
@@ -118,20 +116,17 @@ public abstract class BaseManagedBeanImpl<T extends BaseEntity<PK>, PK extends S
 		return null;
 	}
 
-	
 	/**
 	 * @see com.hsuforum.common.web.jsf.managedbean.BaseManagedBean#doRefreshData()
 	 */
 	@Override
 	public abstract void doRefreshData();
 
-	
 	/**
 	 * @see com.hsuforum.common.web.jsf.managedbean.BaseManagedBean#doCreateAction()
 	 */
 	@Override
 	public abstract String doCreateAction();
-
 
 	/**
 	 * @see com.hsuforum.common.web.jsf.managedbean.BaseManagedBean#doSaveCreateAction()
@@ -139,20 +134,17 @@ public abstract class BaseManagedBeanImpl<T extends BaseEntity<PK>, PK extends S
 	@Override
 	public abstract String doSaveCreateAction();
 
-	
 	/**
 	 * @see com.hsuforum.common.web.jsf.managedbean.BaseManagedBean#doCancelCreateAction()
 	 */
 	@Override
 	public abstract String doCancelCreateAction();
 
-	
 	/**
 	 * @see com.hsuforum.common.web.jsf.managedbean.BaseManagedBean#doUpdateAction()
 	 */
 	@Override
 	public abstract String doUpdateAction(T entity);
-
 
 	/**
 	 * @see com.hsuforum.common.web.jsf.managedbean.BaseManagedBean#doSaveUpdateAction()
@@ -160,34 +152,31 @@ public abstract class BaseManagedBeanImpl<T extends BaseEntity<PK>, PK extends S
 	@Override
 	public abstract String doSaveUpdateAction();
 
-	
 	/**
 	 * @see com.hsuforum.common.web.jsf.managedbean.BaseManagedBean#doCancelUpdateAction()
 	 */
 	@Override
 	public abstract String doCancelUpdateAction();
 
-	
 	/**
 	 * @see com.hsuforum.common.web.jsf.managedbean.BaseManagedBean#doDeleteAction()
 	 */
 	@Override
 	public abstract String doDeleteAction();
 
-	
 	/**
 	 * @see com.hsuforum.common.web.jsf.managedbean.BaseManagedBean#doFindAction()
 	 */
 	@Override
 	public abstract String doFindAction();
-	
 
 	/**
 	 * Get updating data
+	 * 
 	 * @return
 	 */
-	public ValueObject<T, PK> getUpdatingData() {
-		return (ValueObjectImpl<T, PK>) this.updatingData;
+	public ValueObject<T, ID> getUpdatingData() {
+		return (ValueObjectImpl<T, ID>) this.updatingData;
 	}
 
 	/**
@@ -195,14 +184,13 @@ public abstract class BaseManagedBeanImpl<T extends BaseEntity<PK>, PK extends S
 	 * 
 	 * @param updatingData
 	 */
-	public void setUpdatingData(ValueObject<T, PK> updatingData) {
+	public void setUpdatingData(ValueObject<T, ID> updatingData) {
 		this.updatingData = updatingData;
 	}
 
 	/**
-	 * Get service 
+	 * Get service
 	 */
-
 	public SERVICE getService() {
 
 		return this.service;
@@ -218,11 +206,29 @@ public abstract class BaseManagedBeanImpl<T extends BaseEntity<PK>, PK extends S
 	}
 
 	/**
+	 * Get jpa service
+	 * 
+	 * @return
+	 */
+	public JPA_SERVICE getJpaService() {
+		return jpaService;
+	}
+
+	/**
+	 * Set jpa service
+	 * 
+	 * @param jpaService
+	 */
+	public void setJpaService(JPA_SERVICE jpaService) {
+		this.jpaService = jpaService;
+	}
+
+	/**
 	 * Get value object wrapper
 	 * 
-	 * @return VoWrapper<T, PK>
+	 * @return VoWrapper<T, ID>
 	 */
-	public VoWrapper<T, PK> getVoWrapper() {
+	public VoWrapper<T, ID> getVoWrapper() {
 		return voWrapper;
 	}
 
@@ -231,19 +237,18 @@ public abstract class BaseManagedBeanImpl<T extends BaseEntity<PK>, PK extends S
 	 * 
 	 * @param voWrapper
 	 */
-	public void setVoWrapper(VoWrapper<T, PK> voWrapper) {
+	public void setVoWrapper(VoWrapper<T, ID> voWrapper) {
 		this.voWrapper = voWrapper;
 	}
 
 	/**
 	 * Wrap entity to value object
 	 * 
-	 * @param bo
-	 *            Business Object
-	 * @return ValueObject<T, PK>
+	 * @param bo Business Object
+	 * @return ValueObject<T, ID>
 	 */
-	public ValueObject<T, PK> wrap(T entity) {
-		return (ValueObject<T, PK>) this.getVoWrapper().wrap(entity);
+	public ValueObject<T, ID> wrap(T entity) {
+		return (ValueObject<T, ID>) this.getVoWrapper().wrap(entity);
 	}
 
 	/**
@@ -267,7 +272,7 @@ public abstract class BaseManagedBeanImpl<T extends BaseEntity<PK>, PK extends S
 	/**
 	 * Get find operation map
 	 * 
-	 * @return 
+	 * @return
 	 */
 	public Map<String, String> getFindOperMap() {
 		return findOperMap;
@@ -277,7 +282,7 @@ public abstract class BaseManagedBeanImpl<T extends BaseEntity<PK>, PK extends S
 	 * set find operation map
 	 * 
 	 * @param findOperMap
-	 *            
+	 * 
 	 */
 	public void setFindOperMap(Map<String, String> findOperMap) {
 		this.findOperMap = findOperMap;
@@ -286,7 +291,7 @@ public abstract class BaseManagedBeanImpl<T extends BaseEntity<PK>, PK extends S
 	/**
 	 * Get find criteria map
 	 * 
-	 * @return 
+	 * @return
 	 */
 	public Map<String, ? extends Object> getFindCriteriaMap() {
 		return findCriteriaMap;

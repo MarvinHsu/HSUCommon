@@ -20,31 +20,6 @@ public interface BaseService<T, PK extends Serializable> extends Serializable {
 	 * @return int
 	 */
 	int count();
-
-	/**
-	 * Create entity
-	 *
-	 * @param entity
-	 * 
-	 * @return
-	 */
-	T create(T entity);
-
-	/**
-	 * Delete entity of list
-	 *
-	 * @param objList
-	 */
-	void delete(List<T> objList);
-
-	/**
-	 * Delete entity
-	 *
-	 * @param entity
-	 * 
-	 */
-	void delete(T entity);
-
 	/**
 	 * Find data
 	 * 
@@ -223,12 +198,5 @@ public interface BaseService<T, PK extends Serializable> extends Serializable {
 	 */
 	void refresh(Object obj);
 
-	/**
-	 * Update entity
-	 *
-	 * @param entity
-	 * 
-	 */
-	T update(T entity);
 
 }

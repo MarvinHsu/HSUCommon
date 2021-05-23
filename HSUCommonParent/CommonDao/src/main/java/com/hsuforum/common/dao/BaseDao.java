@@ -38,59 +38,7 @@ public interface BaseDao<T, PK extends Serializable> extends Serializable {
 	 * @return
 	 */
 	int count(StringBuffer queryString, Map<String, ? extends Object> paramMap);
-
-	/**
-	 * 
-	 * Create entity
-	 * 
-	 * @param entity
-	 * 
-	 * @return T
-	 */
-	T create(T entity);
-
-	/**
-	 * Delete entity
-	 * 
-	 * @param entity
-	 * 
-	 */
-	void delete(T entity);
-
-	/**
-	 * Excute jpql, limit in insert, update and delete
-	 * 
-	 * @param queryString
-	 * @return
-	 */
-	int excute(StringBuffer queryString);
-
-	/**
-	 * Excute jpql, limit in insert, update and delete
-	 * 
-	 * @param queryString
-	 * @param paramMap
-	 * @return
-	 */
-	int excute(StringBuffer queryString, Map<String, ? extends Object> paramMap);
-
-	/**
-	 * Excute native sql, limit in insert, update and delete
-	 * 
-	 * @param queryString
-	 * @return
-	 */
-	int excuteNativeSQL(StringBuffer queryString);
-
-	/**
-	 * Excute native sql, limit in insert, update and delete
-	 * 
-	 * @param queryString
-	 * @param paramMap
-	 * @return
-	 */
-	int excuteNativeSQL(StringBuffer queryString, Map<String, ? extends Object> paramMap);
-
+	
 	/**
 	 * Find data
 	 * 
@@ -423,12 +371,6 @@ public interface BaseDao<T, PK extends Serializable> extends Serializable {
 	 */
 	void refresh(Object entity);
 
-	/**
-	 * Update entity
-	 *
-	 * @param entity
-	 * @return T
-	 */
-	T update(T entity);
+
 
 }

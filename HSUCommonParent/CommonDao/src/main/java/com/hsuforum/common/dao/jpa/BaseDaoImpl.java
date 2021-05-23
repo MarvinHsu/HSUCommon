@@ -126,83 +126,6 @@ public class BaseDaoImpl<T extends BaseEntity<PK>, PK extends Serializable> impl
 	}
 
 	/**
-	 * @see com.hsuforum.common.dao.BaseDao#create(java.lang.Object)
-	 */
-	@Override
-	public T create(T entity) {
-
-		this.getEntityManager().persist(entity);
-		this.getEntityManager().flush();
-		return entity;
-	}
-
-	/**
-	 * @see com.hsuforum.common.dao.BaseDao#delete(java.lang.Object)
-	 */
-	@Override
-	public void delete(T entity) {
-
-		entity = this.getEntityManager().find(this.getPersistClass(), entity.getId());
-
-		this.getEntityManager().remove(entity);
-		// flush使資料保持一致
-		this.getEntityManager().flush();
-
-	}
-
-	/**
-	 * @see com.hsuforum.common.dao.BaseDao#excute(java.lang.StringBuffer)
-	 */
-	@Override
-	public int excute(StringBuffer queryString) {
-
-		return this.excute(queryString, null);
-
-	}
-
-	/**
-	 * @see com.hsuforum.common.dao.BaseDao#excute(java.lang.StringBuffer,
-	 *      java.util.Map)
-	 */
-	@Override
-	public int excute(StringBuffer queryString, Map<String, ? extends Object> paramMap) {
-		Query query = this.getEntityManager().createQuery(queryString.toString());
-		if (paramMap != null) {
-			for (String param : paramMap.keySet()) {
-				query.setParameter(param, paramMap.get(param));
-
-			}
-		}
-		return query.executeUpdate();
-
-	}
-
-	/**
-	 * @see com.hsuforum.common.dao.BaseDao#excuteNativeSQL(java.lang.StringBuffer)
-	 */
-	@Override
-	public int excuteNativeSQL(StringBuffer queryString) {
-		return this.excuteNativeSQL(queryString, null);
-	}
-
-	/**
-	 * @see com.hsuforum.common.dao.BaseDao#excuteNativeSQL(java.lang.StringBuffer,
-	 *      java.util.Map)
-	 */
-	@Override
-	public int excuteNativeSQL(StringBuffer queryString, Map<String, ? extends Object> paramMap) {
-		Query query = this.getEntityManager().createNativeQuery(queryString.toString());
-		if (paramMap != null) {
-			for (String param : paramMap.keySet()) {
-				query.setParameter(param, paramMap.get(param));
-
-			}
-		}
-		return query.executeUpdate();
-
-	}
-
-	/**
 	 * @see com.hsuforum.common.dao.BaseDao#find(java.lang.String, boolean)
 	 */
 	@Override
@@ -899,16 +822,6 @@ public class BaseDaoImpl<T extends BaseEntity<PK>, PK extends Serializable> impl
 
 	}
 
-	/**
-	 * @see com.hsuforum.common.dao.BaseDao#update(java.lang.Object)
-	 */
-	@Override
-	public T update(T entity) {
 
-		T result = this.getEntityManager().merge(entity);
-		this.getEntityManager().flush();
-		return result;
-
-	}
 
 }

@@ -25,6 +25,7 @@ public abstract class BaseServiceImpl<T extends BaseEntity<PK>, PK extends Seria
 
 	private static final long serialVersionUID = 45493891589631839L;
 
+	
 	/**
 	 * @see com.hsuforum.common.service.BaseService#count()
 	 */
@@ -34,35 +35,6 @@ public abstract class BaseServiceImpl<T extends BaseEntity<PK>, PK extends Seria
 		return this.getDao().count();
 
 	}
-
-	/**
-	 * @see com.hsuforum.common.service.BaseService#create(java.lang.Object)
-	 */
-	@Override
-	public T create(T entity) {
-
-		return (T) this.getDao().create(entity);
-	}
-
-	/**
-	 * @see com.hsuforum.common.service.BaseService#delete(java.util.List)
-	 */
-	@Override
-	public void delete(List<T> objList) {
-		for (T obj : objList) {
-			this.delete(obj);
-		}
-	}
-
-	/**
-	 * @see com.hsuforum.common.service.BaseService#delete(java.lang.Object)
-	 */
-	@Override
-	public void delete(T entity) {
-
-		this.getDao().delete(entity);
-	}
-
 	/**
 	 * @see com.hsuforum.common.service.BaseService#find(java.lang.String,
 	 *      boolean)
@@ -231,12 +203,5 @@ public abstract class BaseServiceImpl<T extends BaseEntity<PK>, PK extends Seria
 		this.getDao().refresh(obj);
 	}
 
-	/**
-	 * @see com.hsuforum.common.service.BaseService#update(java.lang.Object)
-	 */
-	@Override
-	public T update(T entity) {
 
-		return this.getDao().update(entity);
-	}
 }
