@@ -416,13 +416,4 @@
 			<url>https://repo.spring.io/release</url>
 		</repository>
 	</repositories>
-	<distributionManagement>
-		<!-- use the following if you're not using a snapshot version. -->
-		<repository>
-			<id>maven-releases</id>
-			<name>maven-releases</name>
-			<url>https://nexus.hsuforum.com/repository/maven-releases/</url>
-		</repository>
-
-	</distributionManagement>
 </project>
