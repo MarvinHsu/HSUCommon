@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.hsuforum.HSUCommonParent</groupId>
 	<artifactId>HSUCommonParent</artifactId>
-	<version>3.0.11</version>
+	<version>3.0.10</version>
 	<packaging>pom</packaging>
 	<modules>
 		<module>CommonEntity</module>
@@ -416,4 +416,5 @@
 			<url>https://repo.spring.io/release</url>
 		</repository>
 	</repositories>
+
 </project>
