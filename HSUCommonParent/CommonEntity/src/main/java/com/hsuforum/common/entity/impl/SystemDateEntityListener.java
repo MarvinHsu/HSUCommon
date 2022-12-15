@@ -2,8 +2,8 @@ package com.hsuforum.common.entity.impl;
 
 import java.util.Calendar;
 
-import javax.persistence.PrePersist;
-import javax.persistence.PreUpdate;
+import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreUpdate;
 
 import com.hsuforum.common.entity.SystemDateOperation;
 

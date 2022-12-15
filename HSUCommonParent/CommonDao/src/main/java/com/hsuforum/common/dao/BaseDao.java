@@ -4,7 +4,9 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 
-import javax.persistence.EntityManager;
+import jakarta.persistence.EntityManager;
+
+
 
 /**
  * Data access object interface
