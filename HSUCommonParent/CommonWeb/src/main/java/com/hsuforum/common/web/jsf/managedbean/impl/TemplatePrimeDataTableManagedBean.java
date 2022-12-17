@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.faces.model.ListDataModel;
+import jakarta.faces.model.ListDataModel;
 
 import com.hsuforum.common.entity.BaseEntity;
 import com.hsuforum.common.service.BaseJpaService;

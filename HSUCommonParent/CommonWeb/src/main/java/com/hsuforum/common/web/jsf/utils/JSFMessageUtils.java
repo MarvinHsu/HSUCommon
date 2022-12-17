@@ -1,6 +1,6 @@
 package com.hsuforum.common.web.jsf.utils;
 
-import javax.faces.application.FacesMessage;
+import jakarta.faces.application.FacesMessage;
 
 /**
  * Show jsf message utility

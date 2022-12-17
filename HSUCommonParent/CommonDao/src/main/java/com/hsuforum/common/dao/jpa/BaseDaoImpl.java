@@ -8,9 +8,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
+import jakarta.persistence.Query;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -784,7 +784,7 @@ public class BaseDaoImpl<T extends BaseEntity<PK>, PK extends Serializable> impl
 	}
 
 	/**
-	 * @see com.hsuforum.common.dao.BaseDao#setEntityManager(javax.persistence.EntityManager)
+	 * @see com.hsuforum.common.dao.BaseDao#setEntityManager(jakarta.persistence.EntityManager)
 	 */
 	@Override
 	public void setEntityManager(EntityManager entityManager) {
