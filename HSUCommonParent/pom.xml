@@ -381,10 +381,4 @@
 			<url>https://repo.spring.io/release</url>
 		</repository>
 	</repositories>
-	<distributionManagement>
-		<repository>
-			<id>maven-releases</id>
-			<url>https://nexus.hsuforum.com/repository/maven-releases/</url>
-		</repository>
-	</distributionManagement>
 </project>
