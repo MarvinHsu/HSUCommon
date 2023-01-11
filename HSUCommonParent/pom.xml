@@ -16,7 +16,7 @@
 		<spring.version>6.0.3</spring.version>
 		<springSecurity.version>6.0.1</springSecurity.version>
 		<springData.version>2022.0.0</springData.version>
-		<jakartafaces.version>3.0.2</jakartafaces.version>
+		<jakartafaces.version>4.0.0</jakartafaces.version>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
@@ -110,7 +110,7 @@
 		<dependency>
 			<groupId>jakarta.faces</groupId>
 			<artifactId>jakarta.faces-api</artifactId>
-			<version>2.3.2</version>
+			<version>4.0.0</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
