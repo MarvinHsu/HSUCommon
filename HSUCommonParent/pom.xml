@@ -108,12 +108,6 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>jakarta.faces</groupId>
-			<artifactId>jakarta.faces-api</artifactId>
-			<version>4.0.0</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
 			<groupId>org.glassfish</groupId>
 			<artifactId>jakarta.faces</artifactId>
 			<version>${jakartafaces.version}</version>
@@ -387,4 +381,10 @@
 			<url>https://repo.spring.io/release</url>
 		</repository>
 	</repositories>
+	<distributionManagement>
+		<repository>
+			<id>maven-releases</id>
+			<url>https://nexus.hsuforum.com/repository/maven-releases/</url>
+		</repository>
+	</distributionManagement>
 </project>
