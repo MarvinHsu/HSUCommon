@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.hsuforum.HSUCommonParent</groupId>
 	<artifactId>HSUCommonParent</artifactId>
-	<version>4.0.1</version>
+	<version>4.0.2</version>
 	<packaging>pom</packaging>
 	<modules>
 		<module>CommonEntity</module>
@@ -265,7 +265,7 @@
 		<dependency>
 			<groupId>org.owasp.esapi</groupId>
 			<artifactId>esapi</artifactId>
-			<version>2.3.0.0</version>
+			<version>2.5.1.0</version>
 			<exclusions>
 				<exclusion>
 					<groupId>xalan</groupId>
@@ -280,8 +280,12 @@
 					<artifactId>xml-apis</artifactId>
 				</exclusion>
 				<exclusion>
-					<groupId>commons-collections</groupId>
-					<artifactId>commons-collections</artifactId>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>commons-fileupload</groupId>
+    				<artifactId>commons-fileupload</artifactId>
 				</exclusion>
 			</exclusions>
 			<scope>provided</scope>
