@@ -329,7 +329,6 @@ public class BaseDaoImpl<T extends BaseEntity<PK>, PK extends Serializable> impl
 			if (isDesc) {
 				queryString.append("DESC  ");
 			}
-			// 讀取出所有的資料
 			list = this.findByNamedParams(queryString, paramMap);
 		} catch (DataAccessException dataAccessException) {
 
