@@ -15,8 +15,8 @@
 		<primefaces.version>13.0.0</primefaces.version>
 		<spring.version>6.0.11</spring.version>
 		<springSecurity.version>6.1.2</springSecurity.version>
-		<springData.version>2023.0.2</springData.version>
-		<jakartafaces.version>4.0.0</jakartafaces.version>
+		<springData.version>2023.0.3</springData.version>
+		<jakartafaces.version>4.0.3</jakartafaces.version>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
