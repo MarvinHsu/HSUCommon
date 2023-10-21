@@ -13,9 +13,9 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<primefaces.version>13.0.0</primefaces.version>
-		<spring.version>6.0.12</spring.version>
-		<springSecurity.version>6.1.4</springSecurity.version>
-		<springData.version>2023.0.4</springData.version>
+		<spring.version>6.0.13</spring.version>
+		<springSecurity.version>6.1.5</springSecurity.version>
+		<springData.version>2023.0.5</springData.version>
 		<jakartafaces.version>4.0.4</jakartafaces.version>
 		<java.version>17</java.version>
 	</properties>
