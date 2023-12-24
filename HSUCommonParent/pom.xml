@@ -13,9 +13,9 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<primefaces.version>13.0.3</primefaces.version>
-		<spring.version>6.1.1</spring.version>
+		<spring.version>6.1.2</spring.version>
 		<springSecurity.version>6.2.0</springSecurity.version>
-		<springData.version>2023.1.0</springData.version>
+		<springData.version>2023.1.1</springData.version>
 		<jakartafaces.version>4.0.5</jakartafaces.version>
 		<java.version>17</java.version>
 	</properties>
@@ -265,7 +265,7 @@
 		<dependency>
 			<groupId>org.owasp.esapi</groupId>
 			<artifactId>esapi</artifactId>
-			<version>2.5.2.0</version>
+			<version>2.5.3.1</version>
 			<exclusions>
 				<exclusion>
 					<groupId>xalan</groupId>
