@@ -12,7 +12,7 @@ import java.util.Date;
  * @author Marvin
  *
  */
-public class DateUtils extends org.apache.commons.lang.time.DateUtils {
+public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 
 	public final static String ISO_LINK = "-";
 	public final static String TAIWAN_LINK = "/";

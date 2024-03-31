@@ -6,7 +6,7 @@ package com.hsuforum.common.web.util;
  * @author Marvin
  *
  */
-public class StringUtils extends org.apache.commons.lang.StringUtils {
+public class StringUtils extends org.apache.commons.lang3.StringUtils {
 	/**
 	 * StringUtils.getIntMoneyStr("001234567") = "1,234,567"
 	 *
