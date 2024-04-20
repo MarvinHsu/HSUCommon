@@ -16,7 +16,7 @@
 		<spring.version>6.1.6</spring.version>
 		<springSecurity.version>6.2.4</springSecurity.version>
 		<springData.version>2023.1.5</springData.version>
-		<jakartafaces.version>4.0.5</jakartafaces.version>
+		<jakartafaces.version>4.0.6</jakartafaces.version>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
