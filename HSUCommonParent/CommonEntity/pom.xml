@@ -3,7 +3,7 @@
   <parent>
     <groupId>com.hsuforum.HSUCommonParent</groupId>
     <artifactId>HSUCommonParent</artifactId>
-    <version>4.1.1</version>
+    <version>4.2.0</version>
   </parent>
   <artifactId>CommonEntity</artifactId>
 </project>

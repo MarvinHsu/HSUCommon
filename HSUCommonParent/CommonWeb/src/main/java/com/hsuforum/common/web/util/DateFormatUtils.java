@@ -7,7 +7,7 @@ import org.apache.commons.lang.time.FastDateFormat;
  * @author Marvin
  *
  */
-public class DateFormatUtils extends org.apache.commons.lang.time.DateFormatUtils {
+public class DateFormatUtils extends org.apache.commons.lang3.time.DateFormatUtils {
 
 	public static final FastDateFormat SIMPLE_ISO_DATE_FORMAT = FastDateFormat.getInstance("yyyyMMdd");
 
