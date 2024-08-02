@@ -13,9 +13,9 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<primefaces.version>13.0.6</primefaces.version>
-		<spring.version>6.1.10</spring.version>
+		<spring.version>6.1.11</spring.version>
 		<springSecurity.version>6.3.1</springSecurity.version>
-		<springData.version>2024.0.1</springData.version>
+		<springData.version>2024.0.2</springData.version>
 		<jakartafaces.version>4.0.6</jakartafaces.version>
 		<java.version>17</java.version>
 	</properties>
@@ -385,4 +385,13 @@
 			<url>https://repo.spring.io/release</url>
 		</repository>
 	</repositories>	
+	<distributionManagement>
+		<!-- use the following if you're not using a snapshot version. -->
+		<repository>
+			<id>maven-releases</id>
+			<name>maven-releases</name>
+			<url>https://nexus.hsuforum.com/repository/maven-releases/</url>
+		</repository>
+
+	</distributionManagement>		
 </project>
