@@ -1,6 +1,6 @@
 package com.hsuforum.common.web.util;
 
-import org.apache.commons.lang.time.FastDateFormat;
+import org.apache.commons.lang3.time.FastDateFormat;
 
 /**
  * Date format utility for date time
