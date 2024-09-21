@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.hsuforum.HSUCommonParent</groupId>
 	<artifactId>HSUCommonParent</artifactId>
-	<version>4.2.1</version>
+	<version>4.2.2</version>
 	<packaging>pom</packaging>
 	<modules>
 		<module>CommonEntity</module>
@@ -12,10 +12,10 @@
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<primefaces.version>13.0.6</primefaces.version>
-		<spring.version>6.1.12</spring.version>
+		<primefaces.version>14.0.5</primefaces.version>
+		<spring.version>6.1.13</spring.version>
 		<springSecurity.version>6.3.3</springSecurity.version>
-		<springData.version>2024.0.3</springData.version>
+		<springData.version>2024.0.4</springData.version>
 		<jakartafaces.version>4.0.6</jakartafaces.version>
 		<java.version>17</java.version>
 	</properties>
@@ -384,5 +384,5 @@
 			<name>release</name>
 			<url>https://repo.spring.io/release</url>
 		</repository>
-	</repositories>	
+	</repositories>		
 </project>
