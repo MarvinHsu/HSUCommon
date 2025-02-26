@@ -13,9 +13,9 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<primefaces.version>14.0.7</primefaces.version>
-		<spring.version>6.2.2</spring.version>
-		<springSecurity.version>6.4.2</springSecurity.version>
-		<springData.version>2024.1.2</springData.version>
+		<spring.version>6.2.3</spring.version>
+		<springSecurity.version>6.4.3</springSecurity.version>
+		<springData.version>2024.1.3</springData.version>
 		<jakartafaces.version>4.0.6</jakartafaces.version>
 		<java.version>17</java.version>
 	</properties>
@@ -378,5 +378,5 @@
 			<name>release</name>
 			<url>https://repo.spring.io/release</url>
 		</repository>
-	</repositories>		
+	</repositories>			
 </project>
