@@ -14,7 +14,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<primefaces.version>14.0.7</primefaces.version>
 		<spring.version>6.2.0</spring.version>
-		<springSecurity.version>6.4.1</springSecurity.version>
+		<springSecurity.version>6.4.6</springSecurity.version>
 		<springData.version>2024.1.0</springData.version>
 		<jakartafaces.version>4.0.6</jakartafaces.version>
 		<java.version>17</java.version>
