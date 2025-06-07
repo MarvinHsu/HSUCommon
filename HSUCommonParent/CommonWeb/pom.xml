@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>com.hsuforum.HSUCommonParent</groupId>
 		<artifactId>HSUCommonParent</artifactId>
-		<version>4.3.0</version>
+		<version>4.4.0</version>
 	</parent>
 	<artifactId>CommonWeb</artifactId>
 	<dependencies>
