@@ -12,10 +12,10 @@
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<primefaces.version>15.0.6</primefaces.version>
-		<spring.version>6.2.10</spring.version>
-		<springSecurity.version>6.5.3</springSecurity.version>
-		<springData.version>2025.0.3</springData.version>
+		<primefaces.version>15.0.8</primefaces.version>
+		<spring.version>6.2.11</spring.version>
+		<springSecurity.version>6.5.5</springSecurity.version>
+		<springData.version>2025.0.4</springData.version>
 		<jakartafaces.version>4.0.11</jakartafaces.version>
 		<java.version>17</java.version>
 	</properties>
