@@ -103,7 +103,7 @@
 		<!-- JSF -->
 		<dependency>
 			<groupId>org.primefaces</groupId>
-			<artifactId>primefaces</artifactId>
+    		<artifactId>primefaces</artifactId>
 			<version>${primefaces.version}</version>
 			<scope>provided</scope>
 		</dependency>
