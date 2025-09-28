@@ -12,10 +12,10 @@
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<primefaces.version>15.0.6</primefaces.version>
-		<spring.version>6.2.9</spring.version>
-		<springSecurity.version>6.5.2</springSecurity.version>
-		<springData.version>2025.0.2</springData.version>
+		<primefaces.version>15.0.8</primefaces.version>
+		<spring.version>6.2.11</spring.version>
+		<springSecurity.version>6.5.5</springSecurity.version>
+		<springData.version>2025.0.4</springData.version>
 		<jakartafaces.version>4.0.11</jakartafaces.version>
 		<java.version>17</java.version>
 	</properties>
@@ -103,7 +103,7 @@
 		<!-- JSF -->
 		<dependency>
 			<groupId>org.primefaces</groupId>
-			<artifactId>primefaces</artifactId>
+    		<artifactId>primefaces</artifactId>
 			<version>${primefaces.version}</version>
 			<scope>provided</scope>
 		</dependency>
