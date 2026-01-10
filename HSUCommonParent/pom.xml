@@ -17,7 +17,9 @@
 		<springSecurity.version>7.0.2</springSecurity.version>
 		<springData.version>2025.1.1</springData.version>
 		<jakartafaces.version>4.1.4</jakartafaces.version>
-		<java.version>17</java.version>
+		<maven.compiler.source>21</maven.compiler.source>
+		<maven.compiler.target>21</maven.compiler.target>
+		<maven.compiler.release>21</maven.compiler.release>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -290,11 +292,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
-				<configuration>
-					<source>${java.version}</source>
-					<target>${java.version}</target>
-				</configuration>
+				<version>3.14.1</version>
 			</plugin>
 		</plugins>
 	</build>
@@ -347,5 +345,5 @@
 			<name>release</name>
 			<url>https://repo.spring.io/release</url>
 		</repository>
-	</repositories>			
+	</repositories>
 </project>
