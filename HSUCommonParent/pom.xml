@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.hsuforum.HSUCommonParent</groupId>
 	<artifactId>HSUCommonParent</artifactId>
-	<version>5.0.1</version>
+	<version>5.0.2</version>
 	<packaging>pom</packaging>
 	<modules>
 		<module>CommonEntity</module>
@@ -13,9 +13,9 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<primefaces.version>15.0.10</primefaces.version>
-		<spring.version>7.0.2</spring.version>
+		<spring.version>7.0.3</spring.version>
 		<springSecurity.version>7.0.2</springSecurity.version>
-		<springData.version>2025.1.1</springData.version>
+		<springData.version>2025.1.2</springData.version>
 		<jakartafaces.version>4.1.4</jakartafaces.version>
 		<maven.compiler.source>21</maven.compiler.source>
 		<maven.compiler.target>21</maven.compiler.target>
