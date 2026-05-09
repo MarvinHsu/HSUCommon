@@ -15,7 +15,7 @@
 		<primefaces.version>15.0.13</primefaces.version>
 		<spring.version>7.0.7</spring.version>
 		<springSecurity.version>7.0.5</springSecurity.version>
-		<springData.version>2025.1.5</springData.version>
+		<springData.version>4.0.5</springData.version>
 		<jakartafaces.version>4.1.6</jakartafaces.version>
 		<maven.compiler.source>21</maven.compiler.source>
 		<maven.compiler.target>21</maven.compiler.target>
@@ -177,6 +177,7 @@
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-jpa</artifactId>
+			<version>${springData.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -277,13 +278,6 @@
 				<groupId>com.hsuforum.HSUCommonParent</groupId>
 				<artifactId>CommonWeb</artifactId>
 				<version>${project.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.data</groupId>
-				<artifactId>spring-data-bom</artifactId>
-				<version>${springData.version}</version>
-				<scope>import</scope>
-				<type>pom</type>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
