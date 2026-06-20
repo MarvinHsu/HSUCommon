@@ -12,11 +12,11 @@
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<primefaces.version>15.0.13</primefaces.version>
-		<spring.version>7.0.7</spring.version>
-		<springSecurity.version>7.0.5</springSecurity.version>
-		<springData.version>4.0.5</springData.version>
-		<jakartafaces.version>4.1.6</jakartafaces.version>
+		<primefaces.version>15.0.16</primefaces.version>
+		<spring.version>7.0.8</spring.version>
+		<springSecurity.version>7.0.6</springSecurity.version>
+		<springData.version>4.0.6</springData.version>
+		<jakartafaces.version>4.1.9</jakartafaces.version>
 		<maven.compiler.source>21</maven.compiler.source>
 		<maven.compiler.target>21</maven.compiler.target>
 		<maven.compiler.release>21</maven.compiler.release>
