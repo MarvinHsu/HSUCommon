@@ -2,13 +2,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.hsuforum</groupId>
 	<artifactId>HSUCommon</artifactId>
-	<version>5.1.0</version>
+	<version>5.1.1</version>
 	<packaging>jar</packaging>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<primefaces.version>15.0.16</primefaces.version>
 		<spring.version>7.0.8</spring.version>
-		<springSecurity.version>7.0.6</springSecurity.version>
+		<springSecurity.version>7.1.0</springSecurity.version>
 		<springData.version>4.0.6</springData.version>
 		<jakartafaces.version>4.1.9</jakartafaces.version>
 		<maven.compiler.source>21</maven.compiler.source>
