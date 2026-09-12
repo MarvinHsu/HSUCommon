@@ -9,7 +9,7 @@
 		<primefaces.version>15.0.16</primefaces.version>
 		<spring.version>7.0.8</spring.version>
 		<springSecurity.version>7.1.0</springSecurity.version>
-		<springData.version>4.0.6</springData.version>
+		<springData.version>4.1.1</springData.version>
 		<jakartafaces.version>4.1.9</jakartafaces.version>
 		<maven.compiler.source>21</maven.compiler.source>
 		<maven.compiler.target>21</maven.compiler.target>
