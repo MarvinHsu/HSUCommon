@@ -7,7 +7,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<primefaces.version>15.0.19</primefaces.version>
-		<spring.version>7.0.8</spring.version>
+		<spring.version>7.0.10</spring.version>
 		<springSecurity.version>7.1.2</springSecurity.version>
 		<springData.version>4.1.2</springData.version>
 		<jakartafaces.version>4.1.18</jakartafaces.version>
