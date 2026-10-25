@@ -6,11 +6,11 @@
 	<packaging>jar</packaging>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<primefaces.version>15.0.16</primefaces.version>
+		<primefaces.version>15.0.19</primefaces.version>
 		<spring.version>7.0.8</spring.version>
-		<springSecurity.version>7.1.0</springSecurity.version>
-		<springData.version>4.1.1</springData.version>
-		<jakartafaces.version>4.1.9</jakartafaces.version>
+		<springSecurity.version>7.1.2</springSecurity.version>
+		<springData.version>4.1.2</springData.version>
+		<jakartafaces.version>4.1.18</jakartafaces.version>
 		<maven.compiler.source>21</maven.compiler.source>
 		<maven.compiler.target>21</maven.compiler.target>
 		<maven.compiler.release>21</maven.compiler.release>
