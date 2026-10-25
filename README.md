@@ -1,7 +1,7 @@
 # HSUCommon
 
 ![Version](https://img.shields.io/badge/version-5.1.1-blue)
-![Java](https://img.shields.io/badge/java-21-orange)
+![Java](https://img.shields.io/badge/java-25-orange)
 ![Spring](https://img.shields.io/badge/spring-7.0.10-green)
 ![License](https://img.shields.io/badge/license-Apache%202.0-brightgreen)
 
@@ -18,7 +18,7 @@ HSUCommon provides a **layered architecture foundation** with reusable base clas
 ✅ **Modern Spring Framework** - Spring 7.0.10, Spring Data JPA 4.1.2, Spring Security 7.1.2  
 ✅ **Jakarta EE 9+** - Full jakarta.* namespace support (not legacy javax.*)  
 ✅ **JSF & PrimeFaces** - Enterprise web UI components with managed beans  
-✅ **Java 21 Ready** - Compiled and optimized for Java 21  
+✅ **Java 25 Ready** - Compiled and optimized for Java 25  
 ✅ **Backward Compatible** - Maintains legacy patterns while supporting modern approaches  
 
 ## 🏗️ Architecture
@@ -75,13 +75,13 @@ HSUCommon implements a **4-layer architecture** with generic base classes:
 
 | Component | Version | Scope |
 |-----------|---------|-------|
-| **Java** | 21 | Compile Target |
+| **Java** | 25 | Compile Target |
 | **Spring Framework** | 7.0.10 | Provided |
 | **Spring Data JPA** | 4.1.2 | Provided |
 | **Spring Security** | 7.1.2 | Provided |
 | **Jakarta EE** | 9+ | Provided |
 | **Jakarta JPA** | 3.2.0 | Provided |
-| **Jakarta Faces (JSF)** | 4.1.9 | Provided |
+| **Jakarta Faces (JSF)** | 4.1.18 | Provided |
 | **PrimeFaces** | 15.0.19 | Provided |
 | **Apache Commons Lang** | 3.19.0 | Provided |
 | **Velocity** | 2.3 | Provided |
@@ -270,7 +270,7 @@ mvn clean package -DskipTests
 ### Output
 
 - **JAR:** `target/HSUCommon-5.1.1.jar`
-- **Target:** Java 21 compatible, ready for use as a shared dependency
+- **Target:** Java 25 compatible, ready for use as a shared dependency
 
 ## 📚 Documentation
 
@@ -339,7 +339,7 @@ See [AGENTS.md](AGENTS.md) for detailed workflow guides per role.
 
 | Version | Release Date | Java | Spring | Key Changes |
 |---------|--------------|------|--------|-------------|
-| 5.1.1 | 2026-08-31 | 21 | 7.0.10 | Current stable release |
+| 5.1.1 | 2026-10-25 | 25 | 7.0.10 | Current stable release |
 | 5.1.0 | Earlier | 21 | 7.0.8 | Jakarta EE 9+ migration |
 
 ## 📄 License
@@ -355,4 +355,4 @@ For questions about HSUCommon patterns and conventions, refer to:
 
 ---
 
-**HSUCommon v5.1.1** | Shared Utilities Library for Enterprise Java Applications | Java 21 • Spring 7.0.10 • Jakarta EE 9+
+**HSUCommon v5.1.1** | Shared Utilities Library for Enterprise Java Applications | Java 25 • Spring 7.0.10 • Jakarta EE 9+
